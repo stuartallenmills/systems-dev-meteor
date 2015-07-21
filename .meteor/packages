@@ -7,3 +7,10 @@
 meteor-platform
 autopublish
 insecure
+accounts-ui
+accounts-password
+nemo64:bootstrap
+meteorhacks:fast-render
+iron:router
+spiderable
+flemay:less-autoprefixer
