@@ -3,6 +3,8 @@
 
 @import "lib/custom.bootstrap.import.less";
 
+
+
 img {
   max-width:100%;
 }
@@ -13,8 +15,29 @@ img {
 }
 
 .block {
+
+  flex-direction:column;
+  display:flex;
+
+  .atitle {
+    flex-grow:10;
+  }
+
+  .blockblurb {
+    display:flex;
+    flex-direction:row;
+  }
+  .headerImg {
+    flex-grow:1;
+
+  }
+
+  .blktxt {
+    flex-grow:1;
+  }
+
   img {
-    display:inline-block;
+    display:inline-flex;
     margin:10px auto;
   }
 }
