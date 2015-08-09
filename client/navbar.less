@@ -20,7 +20,7 @@
 	float: left;
 	width:100%;
 	margin: 0px;
-	min-height: 30px;
+//	min-height: 30px;
 
 }
 
@@ -35,6 +35,7 @@
 
 	 a {
 	 	font-size: 1.2em;
+	 	font-family: serif;
 	 }
 }
 
@@ -57,5 +58,41 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+}
+
+@media (max-device-aspect-ratio: 2/3) { 
+
+  a {
+  	font-size: 40px;
+  }
+
+  .login-buttons-dropdown-align-right{
+	margin: 20px 10px 10px 10px;
+	border:1px solid #dfdfdf;
+	border-radius:20px;
+
+	 a {
+	 	font-size: 42px;
+	 	font-family: serif;
+	 }
+
+	}
+
+
+	.onlineLabel {
+    border: 1px solid darken(@myyellow, 10%);
+	background-color: @myyellow;
+	padding: 20px;
+	border-radius: 20px;
+	float: right;
+	color: #4f4f4f;
+	margin: 20px;
+	font-size: 42px;
+}
+
+  .navbar {
+  	font-size: 45px;
+  }
 
 }

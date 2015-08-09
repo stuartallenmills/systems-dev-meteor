@@ -1,13 +1,13 @@
 
 <template name="navbar">
-
+      <div class="container-fluid">
  <div id="landing" >
     <div id="banner"  >
      <div id="headstuff" >
            {{> SysDevGraphic}}
            {{> loginButtons align="right"}}
            {{#if storeOnline}}
-             <label class="onlineLabel">we're online</label>
+             <a href="#"><div class="onlineLabel">let's talk</div></a>
              {{/if}}
 
       </div>
@@ -15,7 +15,7 @@
 
 
       <nav class="navbar navbar-default"> 
-        <div class="container-fluid">
+  
          <div class="navbar-header">
          <button type="button" class="navbar-toggle collapsed"
                data-toggle="collapse" 
@@ -40,11 +40,11 @@
            </ul>
  
          </div>
-    	</div>
+    	
     </nav>
     </div>
     </div>
-   
+   </div>
  
 
 </template>

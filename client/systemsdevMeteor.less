@@ -57,13 +57,15 @@ img {
 }
 
 a {
-  font-family: serif;
+  font-family: inherit;
+  font-weight: bold;
   color: @brick;
-  text-decoration: none;
+
 }
 
 a:hover {
   text-decoration: underline;
+  color: darken(@brick, 10%);
 }
 
 @media screen {
@@ -103,6 +105,8 @@ a:hover {
     .atitle {
         font-size: 1.5em;
     }
+
+   
 }
 
 @media (max-device-aspect-ratio: 2/3) {
@@ -112,6 +116,7 @@ a:hover {
     .atitle {
         font-size: 38pt;
     }
+
 }
 
 @media all {
@@ -120,12 +125,6 @@ a:hover {
         background: #f7f7f7;
         /* background-image:url("images/whitePlastic.jpg"); */
     }
+
+  }
  
-
-  
- 
- 
-
-}
-
-

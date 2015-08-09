@@ -8,6 +8,7 @@
 		background-color: @brick;
 		color : white;
 		padding: 5px;
+		margin-top: 3px;
 	}
 
 	.col-sm-6 {
@@ -21,8 +22,42 @@
 	}
 
 	.discuss {
-		margin: 5px;
+ 		margin: 5px;
+ 		padding: 0px 10px 0px 10px;
+
 	}
+}
 
+.blktxt {
+	float:left;
+	width: 100%;
+}
 
+.intxt {
+	float: left;
+	width: 98%;
+	margin-top: 5px;
+	display:block;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1em;
+}
+ .discuss, #blktxt {
+ 	border-bottom: 1px solid #bfbfbf;
+ }
+
+@media (max-device-aspect-ratio: 2/3) { 
+.anIntro {
+    .col-sm-6 {
+      width:98%;
+    }
+ }
+}
+
+@media (min-device-aspect-ratio: 2/3) {
+.anIntro {
+    .col-sm-6 {
+      width:49%;
+    }
+ }
 }
