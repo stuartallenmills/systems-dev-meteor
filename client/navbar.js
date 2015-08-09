@@ -15,7 +15,21 @@ Template.navbar.rendered = function() {
 
 Template.navbar.helpers({
 
-	isActive: function (str) {
+	users: function (){
+      var theusers = Meteor.users.find(); 
+      var ucount = theusers.count();
+      var thearray = theusers.fetch();
+      var first=thearray[0];
+      return theusers;
+    },
+
+    storeOnline: function () {
+    	var theusers = Meteor.users.findOne({username : "smills"}); 
+        return (theusers.status.online);
+
+    },
+
+    isActive: function (str) {
 	 	var val = Router.current().route.getName();
 	 	if (str==val) 
 			{
